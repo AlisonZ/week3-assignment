@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow renders Cart Item 1`] = `
+<div
+  className="cart-item"
+>
+  <span
+    className="dark-grey-primary-title cart-title cart-details"
+  >
+    Centrally-located Manhattan studio
+  </span>
+  <img
+    alt="rental-property"
+    className="cart-image cart-details"
+    src="https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80"
+  />
+  <span
+    className="dark-grey-terciary cart-cost cart-details"
+  >
+    <div>
+      $
+      105
+      /
+    </div>
+    <div>
+      night
+    </div>
+  </span>
+</div>
+`;

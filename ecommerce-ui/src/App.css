@@ -26,11 +26,14 @@
 .rental-component {
   flex: 1 0 20%;  
   padding: 8px 8px 12px 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .rentals-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .rental-image {
@@ -176,4 +179,22 @@
    border-width: 1px;
    border-color: #767676;
    padding: 6px;
+ }
+
+ .add-to-cart-btn {
+   padding: 10px 22px;
+   border-radius: 4px;
+   font-size: 16px;
+   line-height: 24px;
+   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+   font-weight: 800;
+   border-width: 2px;
+   background: #FF5A5F;
+   border-color: transparent;
+   color: #ffffff;
+   margin-top: 16px;
+ }
+
+ .unstyled-list {
+  list-style-type: none;
  }

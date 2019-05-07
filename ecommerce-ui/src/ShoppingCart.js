@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import CartItem from './CartItem';
 import cartImg from './shopping-cart.png';
 import PropTypes from 'prop-types';
+import removeIcon from './remove-icon.png';
+
 
 class ShoppingCart extends Component {
     static propTypes = {
@@ -25,8 +27,14 @@ class ShoppingCart extends Component {
     }
 
     render() {
-        const rentalItems = this.props.selectedRentals.map((rental, indx) => 
-            <CartItem rental={rental} removeFromCart={this.props.removeFromCart}  />
+        const rentalItems = this.props.selectedRentals.map((rental, idx) => 
+        <li key={idx}>
+            <CartItem 
+                rental={rental} 
+            />
+            <img src={removeIcon} onClick={() => this.props.removeFromCart(idx)} className="cart-remove-img cart-details" alt="minus-symbol"/>
+
+        </li>
         );
 
         let price = 0;
@@ -39,12 +47,12 @@ class ShoppingCart extends Component {
                 <img src={cartImg} onClick={this.handleDropDown} className="cart-img" alt="shopping-cart"/>
                 <div>{
                     this.state.isOpen ?
-                    <div>
-                        <ul>
+                    (<div>
+                        <ul className="unstyled-list">
                             {rentalItems}
                         </ul>
-                        <div class="light-grey-primary-title">Total= ${price}</div>
-                    </div> : null
+                        <div className="light-grey-primary-title">Total= ${price}</div>
+                    </div>) : null
                 }
                 </div>
             </span>

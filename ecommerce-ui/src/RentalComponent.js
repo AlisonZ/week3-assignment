@@ -3,35 +3,36 @@ import PropTypes from 'prop-types';
 
 class RentalComponent extends Component {
     static propTypes = {
-        rental: PropTypes.object,
-        addToCart: PropTypes.func,
+            title: PropTypes.string,
+            houseType: PropTypes.string,
+            image: PropTypes.string,
+            cost: PropTypes.number,
+            stars: PropTypes.number,
+            reviews: PropTypes.number,
+            isSuperhost: PropTypes.bool,
     }
 
     render() {
-        const houseType = this.props.rental.houseType.toUpperCase();
+        const houseType = this.props.houseType.toUpperCase();
 
         return (
-            <div className="rental-component">
-                <img src={this.props.rental.image} className="rental-image" alt="rental-property" />
+            <div>
+                <img src={this.props.image} className="rental-image" alt="rental-property" />
                 <div className="rental-info">
 
                     <div className="light-grey-secondary-title">{houseType}</div>
-                    <div className="dark-grey-primary-title">{this.props.rental.title}</div>
-                    <div className="dark-grey-terciary">${this.props.rental.payment.cost}/night</div>
+                    <div className="dark-grey-primary-title">{this.props.title}</div>
+                    <div className="dark-grey-terciary">${this.props.cost}/night</div>
                     <div> 
-                        <span className="dark-grey-four">{this.props.rental.rating.stars} stars </span>
-                        <span className="dark-grey-four" >{this.props.rental.rating.reviews}</span>
+                        <span className="dark-grey-four">{this.props.stars} stars </span>
+                        <span className="dark-grey-four" >{this.props.reviews}</span>
                         {
-                            this.props.rental.host.isSuperhost ?
+                            this.props.isSuperhost ?
                             <span className="dark-grey-four">
                                 <span className="bullet-separator">∙</span>
                                 <span >Superhost</span>
                             </span > : null
                         } 
-
-                        <span id="ratings">
-                            <span onClick={() => this.props.addToCart(this.props.rental)} className="add-to-cart dark-grey-primary-title">Add to Cart</span>
-                        </span>
                     </div>
                 </div>
             </div>

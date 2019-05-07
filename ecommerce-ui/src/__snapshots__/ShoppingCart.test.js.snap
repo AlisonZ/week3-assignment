@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow renders a Shopping Cart 1`] = `
+<span>
+  <img
+    alt="shopping-cart"
+    className="cart-img"
+    onClick={[Function]}
+    src="shopping-cart.png"
+  />
+  <div />
+</span>
+`;

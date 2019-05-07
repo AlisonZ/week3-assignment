@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow renders Rental Component 1`] = `
+<div>
+  <img
+    alt="rental-property"
+    className="rental-image"
+    src="https://via.placeholder.com/350"
+  />
+  <div
+    className="rental-info"
+  >
+    <div
+      className="light-grey-secondary-title"
+    >
+      APARTMENT
+    </div>
+    <div
+      className="dark-grey-primary-title"
+    >
+      The Best Place!!
+    </div>
+    <div
+      className="dark-grey-terciary"
+    >
+      $
+      16
+      /night
+    </div>
+    <div>
+      <span
+        className="dark-grey-four"
+      >
+        4
+         stars 
+      </span>
+      <span
+        className="dark-grey-four"
+      >
+        122
+      </span>
+      <span
+        className="dark-grey-four"
+      >
+        <span
+          className="bullet-separator"
+        >
+          ∙
+        </span>
+        <span>
+          Superhost
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;

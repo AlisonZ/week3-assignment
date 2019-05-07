@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow renders Add Rental Form 1`] = `
+<div>
+  <form
+    action=""
+    className="add-rental-form"
+    id="add-rental-form"
+    method="get"
+    onSubmit={[Function]}
+  >
+    <div
+      className="dark-grey-primary-title add-item"
+    >
+      List your property with us:
+    </div>
+    <div
+      className="add-rental"
+    >
+      <label
+        class="dark-grey-terciary add-item"
+        for="title-input"
+      >
+        Rental title:
+      </label>
+      <input
+        className="add-input"
+        name="title-input"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="add-rental"
+    >
+      <label
+        class="dark-grey-terciary add-item"
+        for="property-type-input"
+      >
+        Property type:
+      </label>
+      <input
+        class="add-input"
+        name="property-type-input"
+        onChange={[Function]}
+        type="text"
+      />
+    </div>
+    <div
+      class="add-rental"
+    >
+      <label
+        class="dark-grey-terciary add-item"
+        for="cost-input"
+      >
+        Cost per night:
+      </label>
+      <input
+        class="add-input"
+        name="cost-input"
+        onChange={[Function]}
+        type="text"
+        value={0}
+      />
+    </div>
+    <div
+      class="add-rental"
+    >
+      <label
+        class="dark-grey-terciary add-item"
+        for="image-input"
+      >
+        Image link:
+      </label>
+      <input
+        class="add-input"
+        name="image-input"
+        onChange={[Function]}
+        type="text"
+      />
+    </div>
+    <div
+      class="add-rental"
+    >
+      <label
+        class="dark-grey-terciary add-item"
+        for="city-input"
+      >
+        City:
+      </label>
+      <input
+        class="add-input"
+        name="city-input"
+        onChange={[Function]}
+        type="text"
+      />
+    </div>
+    <div
+      class="add-rental"
+    >
+      <label
+        class="dark-grey-terciary add-item"
+        for="country-input"
+      >
+        Country:
+      </label>
+      <input
+        class="add-input"
+        name="country-input"
+        onChange={[Function]}
+        type="text"
+      />
+    </div>
+    <div>
+      <input
+        name="add-rental-submit-button"
+        type="submit"
+        value="Submit"
+      />
+    </div>
+  </form>
+</div>
+`;

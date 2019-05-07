@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow renders RentalsList 1`] = `
+<div>
+  <h1
+    className="top-places-title"
+  >
+    Top Places to Stay
+  </h1>
+  <ul
+    className="rentals-list unstyled-list"
+  >
+    <li
+      className="rental-component"
+      key="0"
+    >
+      <RentalComponent
+        cost={105}
+        houseType="Apartment"
+        image="https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80"
+        isSuperhost={true}
+        reviews={133}
+        stars={3}
+        title="Centrally-located Manhattan studio"
+      />
+      <button
+        className="add-to-cart-btn"
+      >
+        Add to Cart
+      </button>
+    </li>
+    <li
+      className="rental-component"
+      key="1"
+    >
+      <RentalComponent
+        cost={130}
+        houseType="Apartment"
+        image="https://images.unsplash.com/photo-1519424187720-db6d0fc5a5d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19f783ae564d7c6da4777cde1a84c1c9&auto=format&fit=crop&w=500&q=80"
+        isSuperhost={true}
+        reviews={381}
+        stars={4.5}
+        title="Denver apartment outside Union Station"
+      />
+      <button
+        className="add-to-cart-btn"
+      >
+        Add to Cart
+      </button>
+    </li>
+  </ul>
+</div>
+`;
